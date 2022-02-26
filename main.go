@@ -34,8 +34,7 @@ func main() {
 			return
 		}
 		files := form.File["files"]
-		Url := "https://points-preprod.toppr.com/points/api/v1/upload-s3/"
-		// Url := "http://0.0.0.0:3000/upload-s3/"
+		Url := "http://0.0.0.0:3000/upload-s3/"
 
 		for _, file := range files {
 			filename := filepath.Base(file.Filename)
